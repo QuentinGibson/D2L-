@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_18_191842) do
+ActiveRecord::Schema.define(version: 2020_06_18_214322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,26 +29,23 @@ ActiveRecord::Schema.define(version: 2020_06_18_191842) do
   end
 
   create_table "tags", force: :cascade do |t|
-    t.integer "priority"
+    t.integer "priority", default: 0
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "task_id"
-    t.bigint "task_id_id"
-    t.index ["task_id_id"], name: "index_tags_on_task_id_id"
   end
 
   create_table "tasks", force: :cascade do |t|
     t.integer "priority"
     t.string "description"
-    t.boolean "completed"
+    t.boolean "completed", default: false
     t.string "name"
     t.time "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "subject_id"
-    t.bigint "subject_id_id"
-    t.index ["subject_id_id"], name: "index_tasks_on_subject_id_id"
+    t.bigint "subject_id"
+    t.index ["subject_id"], name: "index_tasks_on_subject_id"
   end
 
+  add_foreign_key "tasks", "subjects"
 end
