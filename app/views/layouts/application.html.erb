@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp</title>
+    <title>D2L++</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://kit.fontawesome.com/2c229f54df.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div id="wrapper">
+      <%= render "layouts/sidebar" %>
+      <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+          <%= render "layouts/topnav" %>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
