@@ -1,5 +1,5 @@
 <% @subjects.each do |s| %>
-  <div class="card shadow mb-4 mx-5">
+  <div class="card shadow mb-4 mx-3">
     <div class="card-header py-3">
       <h6 class="text-primary font-weight-bold m-0"><%= s.name %></h6>
     </div>
@@ -8,7 +8,7 @@
         <li class="list-group-item">
           <div class="row align-items-center no-gutters">
             <div class="col mr-2">
-              <h6 class="mb-0"><strong><%= task.name %></strong></h6><span class="text-xs">10:30 AM</span>
+              <h6 class="mb-0"><strong><%= task.name %></strong></h6>
             </div>
             <div class="col-auto">
               <div class="custom-control custom-checkbox">
@@ -18,6 +18,18 @@
           </div>
         </li>
       <% end %>
+      <li class="list-group-item">
+        <div class="row align-items-center no-gutters">
+          <div class="col mr-2">
+            <%= link_to "New Task", new_task_path(s)%>
+            <span><i class="fas fa-plus"></i></span></div>
+          <div class="col-auto">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" id="formCheck-1">
+            </div>
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
 <% end %>
