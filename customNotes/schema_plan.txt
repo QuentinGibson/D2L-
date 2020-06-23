@@ -1,0 +1,10 @@
+task
+  -name
+  due_date Date
+  -description
+  -completed
+  color
+  -time
+  tags?
+  task_list?
+
