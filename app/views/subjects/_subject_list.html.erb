@@ -1,9 +1,10 @@
 <% @subjects.each do |s| %>
   <div class="card shadow mb-4 mx-3">
-    <div class="card-header py-3 d-flex">
-      <h6 class="text-primary font-weight-bold m-0"><%= s.name %></h6>
+    <div class="card-header py-3 d-flex align-items-center">
+      <h6 class="text-primary font-weight-bold m-0 mr-auto"><%= s.name %></h6>
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-cog"></i>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <%= link_to "Edit", edit_subject_path(s), class: "dropdown-item" %>
@@ -15,18 +16,18 @@
       <% s.tasks.each do |task| %>
         <li class="list-group-item">
           <div class="row align-items-center no-gutters">
-            <div class="col mr-2">
-              <%= link_to subject_task_path(s, task) do %>
+            <div class="col d-flex">
+              <%= link_to subject_task_path(s, task), class:"mr-auto" do %>
                 <strong class="h6"><%= task.name %></strong>
               <% end %>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <%= link_to "Edit", edit_subject_task_path(s, task), class: "dropdown-item" %>
-                <%= link_to "Delete", subject_task_path(s, task), method: :delete, data: { confirm: 'Are you sure you want to delete this?' }, class: "dropdown-item" %>
-              </div>
-            </div>
-            <div class="col-auto">
-              <div class="custom-control custom-checkbox">
-                <input class="custom-control-input" type="checkbox" id="formCheck-1">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-cog"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <%= link_to "Edit", edit_subject_path(s), class: "dropdown-item" %>
+                  <%= link_to "Delete", subject_path(s), method: :delete, data: { confirm: 'Are you sure you want to delete this?' }, class: "dropdown-item" %>
+                </div>
               </div>
             </div>
           </div>
@@ -35,7 +36,9 @@
       <li class="list-group-item">
         <div class="row align-items-center no-gutters">
           <div class="col mr-2">
-            <%= link_to "New Task", new_subject_task_path(s)%>
+            <%= link_to new_subject_task_path(s), class: "w-100 new-item" do %>
+              <p class="w-100 d-flex align-items-center"><span class="d-block mr-auto h6">Add More Things Here</span><i class="fa fa-plus fa-lg"></i></p>
+            <% end %>
           <div class="col-auto">
             <div class="custom-control custom-checkbox">
               <input class="custom-control-input" type="checkbox" id="formCheck-1">
