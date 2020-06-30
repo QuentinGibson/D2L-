@@ -15,6 +15,7 @@
  */
 
 @import "bootstrap";
+@import "variables";
 
 // TODO: Extract rules into seprate stylesheets
 
@@ -49,6 +50,8 @@
   }
 }
 
+
+
 .new-item {
   padding-top: 3rem
 
@@ -56,4 +59,16 @@
 
 .new-item:hover {
   text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  background-color: inherit;
+}
+
+i:visited {
+  color: $light;
 }
