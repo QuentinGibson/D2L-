@@ -36,7 +36,9 @@
       <li class="list-group-item">
         <div class="row align-items-center no-gutters">
           <div class="col mr-2">
-            <%= link_to "New Task", new_subject_task_path(s)%>
+            <%= link_to new_subject_task_path(s), class: "w-100 new-item" do %>
+              <p class="w-100 d-flex align-items-center"><span class="d-block mr-auto h6">Add More Things Here</span><i class="fa fa-plus fa-lg"></i></p>
+            <% end %>
           <div class="col-auto">
             <div class="custom-control custom-checkbox">
               <input class="custom-control-input" type="checkbox" id="formCheck-1">

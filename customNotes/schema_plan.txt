@@ -8,3 +8,6 @@ task
   tags?
   task_list?
 
+https://www.docker.com/products/docker-desktop
+https://docs.docker.com/engine/install/ubuntu/
+https://github.com/QuentinGibson/College-Planner
