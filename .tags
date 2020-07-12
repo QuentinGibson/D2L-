@@ -1,0 +1,143 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+AddColorToTask	db/migrate/20200623040414_add_color_to_task.rb	/^class AddColorToTask < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+AddForeignKeyToTags	db/migrate/20200618223411_add_foreign_key_to_tags.rb	/^class AddForeignKeyToTags < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+AddForeignKeyToTasks	db/migrate/20200618214322_add_foreign_key_to_tasks.rb	/^class AddForeignKeyToTasks < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+AddGradeToSubjects	db/migrate/20200618184050_add_grade_to_subjects.rb	/^class AddGradeToSubjects < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+AddNameToSubjects	db/migrate/20200615161058_add_name_to_subjects.rb	/^class AddNameToSubjects < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+AddNameToUsers	db/migrate/20200712043412_add_name_to_users.rb	/^class AddNameToUsers < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+AddSubjectToTask	db/migrate/20200618191825_add_subject_to_task.rb	/^class AddSubjectToTask < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+AddSubjectToTasks	db/migrate/20200618201307_add_subject_to_tasks.rb	/^class AddSubjectToTasks < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+AddTagsToTask	db/migrate/20200618223129_add_tags_to_task.rb	/^class AddTagsToTask < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+AddTaskToTag	db/migrate/20200618191842_add_task_to_tag.rb	/^class AddTaskToTag < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Myapp	inherits:Rails.Application
+ApplicationCable	app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	m
+ApplicationCable	app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	m
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c	inherits:ActionController.Base
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ApplicationJob	app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	c	inherits:ActiveJob.Base
+ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c	inherits:ActionMailer.Base
+ApplicationRecord	app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c	inherits:ActiveRecord.Base
+ApplicationSystemTestCase	test/application_system_test_case.rb	/^class ApplicationSystemTestCase < ActionDispatch::SystemTestCase$/;"	c	inherits:ActionDispatch.SystemTestCase
+ChangeColumnDefaultTasksCompleted	db/migrate/20200618213229_change_column_default_tasks_completed.rb	/^class ChangeColumnDefaultTasksCompleted < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+ChangeDefaultValueForPriority	db/migrate/20200618213459_change_default_value_for_priority.rb	/^class ChangeDefaultValueForPriority < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+ChangeDueDateToDateType	db/migrate/20200623040433_change_due_date_to_date_type.rb	/^class ChangeDueDateToDateType < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+Channel	app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	c	class:ApplicationCable	inherits:ActionCable.Channel.Base
+Connection	app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	c	class:ApplicationCable	inherits:ActionCable.Connection.Base
+CreateActiveStorageTables	db/migrate/20200712060139_create_active_storage_tables.active_storage.rb	/^class CreateActiveStorageTables < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+CreateJoinTableTasksTags	db/migrate/20200618224116_create_join_table_tasks_tags.rb	/^class CreateJoinTableTasksTags < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+CreateParents	db/migrate/20200615163319_create_parents.rb	/^class CreateParents < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+CreateTags	db/migrate/20200618190343_create_tags.rb	/^class CreateTags < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+CreateTasks	db/migrate/20200618190410_create_tasks.rb	/^class CreateTasks < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+DeviseCreateUsers	db/migrate/20200711013952_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+Model	db/migrate/20200618185745_model.rb	/^class Model < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+Myapp	config/application.rb	/^module Myapp$/;"	m
+Parent	app/models/parent.rb	/^class Parent < ApplicationRecord$/;"	c	inherits:ApplicationRecord
+ParentTest	test/models/parent_test.rb	/^class ParentTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+ParentsController	app/controllers/parents_controller.rb	/^class ParentsController < ApplicationController$/;"	c	inherits:ApplicationController
+ParentsControllerTest	test/controllers/parents_controller_test.rb	/^class ParentsControllerTest < ActionDispatch::IntegrationTest$/;"	c	inherits:ActionDispatch.IntegrationTest
+ParentsHelper	app/helpers/parents_helper.rb	/^module ParentsHelper$/;"	m
+ParentsTest	test/system/parents_test.rb	/^class ParentsTest < ApplicationSystemTestCase$/;"	c	inherits:ApplicationSystemTestCase
+RemovePriorityFromTask	db/migrate/20200618222849_remove_priority_from_task.rb	/^class RemovePriorityFromTask < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+RemoveSubjectIdIdFromTask	db/migrate/20200618200507_remove_subject_id_id_from_task.rb	/^class RemoveSubjectIdIdFromTask < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+RemoveTaskIdFromTags	db/migrate/20200618223918_remove_task_id_from_tags.rb	/^class RemoveTaskIdFromTags < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+RemoveTaskIdIdFromTags	db/migrate/20200618200924_remove_task_id_id_from_tags.rb	/^class RemoveTaskIdIdFromTags < ActiveRecord::Migration[5.2]$/;"	c	inherits:ActiveRecord.Migration
+Subject	app/models/subject.rb	/^class Subject < ApplicationRecord$/;"	c	inherits:ApplicationRecord
+SubjectTest	test/models/subject_test.rb	/^class SubjectTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+SubjectsController	app/controllers/subjects_controller.rb	/^class SubjectsController < ApplicationController$/;"	c	inherits:ApplicationController
+SubjectsControllerTest	test/controllers/subjects_controller_test.rb	/^class SubjectsControllerTest < ActionDispatch::IntegrationTest$/;"	c	inherits:ActionDispatch.IntegrationTest
+SubjectsHelper	app/helpers/subjects_helper.rb	/^module SubjectsHelper$/;"	m
+SubjectsTest	test/system/subjects_test.rb	/^class SubjectsTest < ApplicationSystemTestCase$/;"	c	inherits:ApplicationSystemTestCase
+Tag	app/models/tag.rb	/^class Tag < ApplicationRecord$/;"	c	inherits:ApplicationRecord
+TagTest	test/models/tag_test.rb	/^class TagTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TagsController	app/controllers/tags_controller.rb	/^class TagsController < ApplicationController$/;"	c	inherits:ApplicationController
+TagsControllerTest	test/controllers/tags_controller_test.rb	/^class TagsControllerTest < ActionDispatch::IntegrationTest$/;"	c	inherits:ActionDispatch.IntegrationTest
+TagsHelper	app/helpers/tags_helper.rb	/^module TagsHelper$/;"	m
+TagsTest	test/system/tags_test.rb	/^class TagsTest < ApplicationSystemTestCase$/;"	c	inherits:ApplicationSystemTestCase
+Task	app/models/task.rb	/^class Task < ApplicationRecord$/;"	c	inherits:ApplicationRecord
+TaskTest	test/models/task_test.rb	/^class TaskTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+TasksController	app/controllers/tasks_controller.rb	/^class TasksController < ApplicationController$/;"	c	inherits:ApplicationController
+TasksControllerTest	test/controllers/tasks_controller_test.rb	/^class TasksControllerTest < ActionDispatch::IntegrationTest$/;"	c	inherits:ActionDispatch.IntegrationTest
+TasksHelper	app/helpers/tasks_helper.rb	/^module TasksHelper$/;"	m
+TasksTest	test/system/tasks_test.rb	/^class TasksTest < ApplicationSystemTestCase$/;"	c	inherits:ApplicationSystemTestCase
+TestCase	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c	class:ActiveSupport
+User	app/models/user.rb	/^class User < ApplicationRecord$/;"	c	inherits:ApplicationRecord
+UserTest	test/models/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c	inherits:ActiveSupport.TestCase
+build_subject	app/models/task.rb	/^    belongs_to :subject$/;"	F	class:Task
+change	db/migrate/20200615161058_add_name_to_subjects.rb	/^  def change$/;"	f	class:AddNameToSubjects
+change	db/migrate/20200615163319_create_parents.rb	/^  def change$/;"	f	class:CreateParents
+change	db/migrate/20200618184050_add_grade_to_subjects.rb	/^  def change$/;"	f	class:AddGradeToSubjects
+change	db/migrate/20200618185745_model.rb	/^  def change$/;"	f	class:Model
+change	db/migrate/20200618190343_create_tags.rb	/^  def change$/;"	f	class:CreateTags
+change	db/migrate/20200618190410_create_tasks.rb	/^  def change$/;"	f	class:CreateTasks
+change	db/migrate/20200618191825_add_subject_to_task.rb	/^  def change$/;"	f	class:AddSubjectToTask
+change	db/migrate/20200618191842_add_task_to_tag.rb	/^  def change$/;"	f	class:AddTaskToTag
+change	db/migrate/20200618200507_remove_subject_id_id_from_task.rb	/^  def change$/;"	f	class:RemoveSubjectIdIdFromTask
+change	db/migrate/20200618200924_remove_task_id_id_from_tags.rb	/^  def change$/;"	f	class:RemoveTaskIdIdFromTags
+change	db/migrate/20200618201307_add_subject_to_tasks.rb	/^  def change$/;"	f	class:AddSubjectToTasks
+change	db/migrate/20200618213229_change_column_default_tasks_completed.rb	/^  def change$/;"	f	class:ChangeColumnDefaultTasksCompleted
+change	db/migrate/20200618213459_change_default_value_for_priority.rb	/^  def change$/;"	f	class:ChangeDefaultValueForPriority
+change	db/migrate/20200618214322_add_foreign_key_to_tasks.rb	/^  def change$/;"	f	class:AddForeignKeyToTasks
+change	db/migrate/20200618222849_remove_priority_from_task.rb	/^  def change$/;"	f	class:RemovePriorityFromTask
+change	db/migrate/20200618223129_add_tags_to_task.rb	/^  def change$/;"	f	class:AddTagsToTask
+change	db/migrate/20200618223411_add_foreign_key_to_tags.rb	/^  def change$/;"	f	class:AddForeignKeyToTags
+change	db/migrate/20200618223918_remove_task_id_from_tags.rb	/^  def change$/;"	f	class:RemoveTaskIdFromTags
+change	db/migrate/20200618224116_create_join_table_tasks_tags.rb	/^  def change$/;"	f	class:CreateJoinTableTasksTags
+change	db/migrate/20200623040414_add_color_to_task.rb	/^  def change$/;"	f	class:AddColorToTask
+change	db/migrate/20200623040433_change_due_date_to_date_type.rb	/^  def change$/;"	f	class:ChangeDueDateToDateType
+change	db/migrate/20200711013952_devise_create_users.rb	/^  def change$/;"	f	class:DeviseCreateUsers
+change	db/migrate/20200712043412_add_name_to_users.rb	/^  def change$/;"	f	class:AddNameToUsers
+change	db/migrate/20200712060139_create_active_storage_tables.active_storage.rb	/^  def change$/;"	f	class:CreateActiveStorageTables
+create	app/controllers/parents_controller.rb	/^  def create$/;"	f	class:ParentsController
+create	app/controllers/subjects_controller.rb	/^  def create$/;"	f	class:SubjectsController
+create	app/controllers/tags_controller.rb	/^  def create$/;"	f	class:TagsController
+create	app/controllers/tasks_controller.rb	/^  def create$/;"	f	class:TasksController
+create_subject	app/models/task.rb	/^    belongs_to :subject$/;"	F	class:Task
+create_subject!	app/models/task.rb	/^    belongs_to :subject$/;"	F	class:Task
+destroy	app/controllers/parents_controller.rb	/^  def destroy$/;"	f	class:ParentsController
+destroy	app/controllers/subjects_controller.rb	/^  def destroy$/;"	f	class:SubjectsController
+destroy	app/controllers/tags_controller.rb	/^  def destroy$/;"	f	class:TagsController
+destroy	app/controllers/tasks_controller.rb	/^  def destroy$/;"	f	class:TasksController
+edit	app/controllers/parents_controller.rb	/^  def edit$/;"	f	class:ParentsController
+edit	app/controllers/subjects_controller.rb	/^  def edit$/;"	f	class:SubjectsController
+edit	app/controllers/tags_controller.rb	/^  def edit$/;"	f	class:TagsController
+edit	app/controllers/tasks_controller.rb	/^  def edit$/;"	f	class:TasksController
+get_subject	app/controllers/tasks_controller.rb	/^  def get_subject$/;"	f	class:TasksController
+index	app/controllers/parents_controller.rb	/^  def index$/;"	f	class:ParentsController
+index	app/controllers/subjects_controller.rb	/^  def index$/;"	f	class:SubjectsController
+index	app/controllers/tags_controller.rb	/^  def index$/;"	f	class:TagsController
+index	app/controllers/tasks_controller.rb	/^  def index$/;"	f	class:TasksController
+new	app/controllers/parents_controller.rb	/^  def new$/;"	f	class:ParentsController
+new	app/controllers/subjects_controller.rb	/^  def new$/;"	f	class:SubjectsController
+new	app/controllers/tags_controller.rb	/^  def new$/;"	f	class:TagsController
+new	app/controllers/tasks_controller.rb	/^  def new$/;"	f	class:TasksController
+parent_params	app/controllers/parents_controller.rb	/^    def parent_params$/;"	f	class:ParentsController
+set_parent	app/controllers/parents_controller.rb	/^    def set_parent$/;"	f	class:ParentsController
+set_subject	app/controllers/subjects_controller.rb	/^    def set_subject$/;"	f	class:SubjectsController
+set_tag	app/controllers/tags_controller.rb	/^    def set_tag$/;"	f	class:TagsController
+set_task	app/controllers/tasks_controller.rb	/^  def set_task$/;"	f	class:TasksController
+show	app/controllers/parents_controller.rb	/^  def show$/;"	f	class:ParentsController
+show	app/controllers/subjects_controller.rb	/^  def show$/;"	f	class:SubjectsController
+show	app/controllers/tags_controller.rb	/^  def show$/;"	f	class:TagsController
+show	app/controllers/tasks_controller.rb	/^  def show$/;"	f	class:TasksController
+subject	app/models/task.rb	/^    belongs_to :subject$/;"	F	class:Task
+subject=	app/models/task.rb	/^    belongs_to :subject$/;"	F	class:Task
+subject_params	app/controllers/subjects_controller.rb	/^    def subject_params$/;"	f	class:SubjectsController
+tag_ids	app/models/task.rb	/^    has_and_belongs_to_many :tags$/;"	F	class:Task
+tag_ids=	app/models/task.rb	/^    has_and_belongs_to_many :tags$/;"	F	class:Task
+tag_params	app/controllers/tags_controller.rb	/^    def tag_params$/;"	f	class:TagsController
+tags	app/models/task.rb	/^    has_and_belongs_to_many :tags$/;"	F	class:Task
+tags=	app/models/task.rb	/^    has_and_belongs_to_many :tags$/;"	F	class:Task
+task_ids	app/models/subject.rb	/^  has_many :tasks, dependent: :destroy$/;"	F	class:Subject
+task_ids	app/models/tag.rb	/^  has_and_belongs_to_many :tasks$/;"	F	class:Tag
+task_ids=	app/models/subject.rb	/^  has_many :tasks, dependent: :destroy$/;"	F	class:Subject
+task_ids=	app/models/tag.rb	/^  has_and_belongs_to_many :tasks$/;"	F	class:Tag
+task_params	app/controllers/tasks_controller.rb	/^  def task_params$/;"	f	class:TasksController
+tasks	app/models/subject.rb	/^  has_many :tasks, dependent: :destroy$/;"	F	class:Subject
+tasks	app/models/tag.rb	/^  has_and_belongs_to_many :tasks$/;"	F	class:Tag
+tasks=	app/models/subject.rb	/^  has_many :tasks, dependent: :destroy$/;"	F	class:Subject
+tasks=	app/models/tag.rb	/^  has_and_belongs_to_many :tasks$/;"	F	class:Tag
+update	app/controllers/parents_controller.rb	/^  def update$/;"	f	class:ParentsController
+update	app/controllers/subjects_controller.rb	/^  def update$/;"	f	class:SubjectsController
+update	app/controllers/tags_controller.rb	/^  def update$/;"	f	class:TagsController
+update	app/controllers/tasks_controller.rb	/^  def update$/;"	f	class:TasksController
