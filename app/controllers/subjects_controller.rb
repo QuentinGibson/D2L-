@@ -1,12 +1,12 @@
 class SubjectsController < ApplicationController
 #TODO: ADD ALL PARAMS FOR NEW MODEL
   before_action :set_subject, only: [:show, :edit, :update, :destroy]
-  before_action :set_user
   before_action :authenticate_user!
 
   # GET /subjects
   # GET /subjects.json
   def index
+    logger.debug "Current User is: #{current_user.subjects}"
     @subjects = current_user.subjects.all
   end
 
@@ -17,7 +17,7 @@ class SubjectsController < ApplicationController
 
   # GET /subjects/new
   def new
-    @subject = @user.subjects.new(subject_params)
+    @subject = current_user.subjects.new(subject_params)
   end
 
   # GET /subjects/1/edit
@@ -70,12 +70,9 @@ class SubjectsController < ApplicationController
       @subject = Subject.find(params[:id])
     end
 
-    def set_user
-      @user = current_user
-    end
 
     # Only allow a list of trusted parameters through.
     def subject_params
-      params.require(:subject).permit(:grade, :name, :task, :user_id)
+      params.permit(:grade, :name, :task, :user_id)
     end
 end
