@@ -7,9 +7,7 @@ class SubjectsController < ApplicationController
   # GET /subjects
   # GET /subjects.json
   def index
-    logger.debug "Current User Hash: #{current_user.attributes.inspect}"
-    logger.debug "Current User ID: #{ current_user.id }"
-    @subjects = Subject.all
+    @subjects = current_user.subjects.all
   end
 
   # GET /subjects/1
