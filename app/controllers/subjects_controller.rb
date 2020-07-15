@@ -17,7 +17,7 @@ class SubjectsController < ApplicationController
 
   # GET /subjects/new
   def new
-    @subject = current_user.subjects.new(subject_params)
+    @subject = current_user.subjects.new
   end
 
   # GET /subjects/1/edit
@@ -69,15 +69,8 @@ class SubjectsController < ApplicationController
       @subject = Subject.find(params[:id])
     end
 
-<<<<<<< HEAD
-
-    # Only allow a list of trusted parameters through.
-    def subject_params
-      params.permit(:grade, :name, :task, :user_id)
-=======
     # Only allow a list of trusted parameters through.
     def subject_params
       params.require(:subject).permit(:name)
->>>>>>> addcalendar
     end
 end

@@ -1,11 +1,10 @@
 <h1>Calendar</h1>
 
-<%= month_calendar events: @tasks do |date, tasks| %>
+<%= month_calendar(attribute: :start_time, end_attribute: :end_date, events: @tasks) do |date, tasks| %>
   <%= date.day %>
-  <%tasks.each do |task|%>
+<%tasks.each do |task|%>
     <div>
       <%= task.name%>
     </div>
   <% end %>
-
 <% end %>
