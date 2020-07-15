@@ -11,3 +11,47 @@ task
 https://www.docker.com/products/docker-desktop
 https://docs.docker.com/engine/install/ubuntu/
 https://github.com/QuentinGibson/College-Planner
+
+# Simple-Calendar set Time Zone
+class TasksController < ActionController::Base
+  before_action :set_time_zone, if: :user_signed_in?
+
+  private
+
+    def set_time_zone
+      Time.zone = current_user.time_zone
+    end
+end
+
+#Global Time Zone application.rb
+config.time_zone = 'Central Time (US & Canada)'
+
+# Custom css classes
+.simple-calendar {
+  .day {}
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {}
+  .past {}
+  .future {}
+
+  .start-date {}
+
+  .prev-month {}
+  .next-month { }
+  .current-month {}
+
+  .has-events {}
+}
+
+# Custom Titles and Links
+<%= t('date.month_names')[start_date.month] %> <%= start_date.year %>
+<%= t('date.abbr_month_names')[start_date.month] %> <%= start_date.year %>
+Your calendar will now display "Sep 2015" instead of "September 2015" at the top! :)

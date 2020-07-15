@@ -27,8 +27,7 @@ class SubjectsController < ApplicationController
   # POST /subjects
   # POST /subjects.json
   def create
-    @subject = Subject.new(subject_params)
-
+    @subject = current_user.subjects.new(subject_params)
     respond_to do |format|
       if @subject.save
         format.html { redirect_to @subject, notice: 'Subject was successfully created.' }
@@ -70,9 +69,15 @@ class SubjectsController < ApplicationController
       @subject = Subject.find(params[:id])
     end
 
+<<<<<<< HEAD
 
     # Only allow a list of trusted parameters through.
     def subject_params
       params.permit(:grade, :name, :task, :user_id)
+=======
+    # Only allow a list of trusted parameters through.
+    def subject_params
+      params.require(:subject).permit(:name)
+>>>>>>> addcalendar
     end
 end

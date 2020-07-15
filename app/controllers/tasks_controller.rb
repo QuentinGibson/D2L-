@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
   before_action :get_subject
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :set_time_zone, if: :user_signed_in?
 
   # GET /tasks
   # GET /tasks.json
@@ -62,10 +63,21 @@ class TasksController < ApplicationController
     end
   end
 
+  def calendar
+    @tasks =Task.all
+  end
+
   private
   def get_subject
-    @subject = Subject.find(params[:subject_id])
+    if(params[:subject_id] == nil)
+      @subject = current_user.subjects.all
+    else
+      @subject = current_user.subjects.find(params[:subject_id])
+    end
   end
+  def set_time_zone
+  end
+
   # Use callbacks to share common setup or constraints between actions.
   def set_task
     @task = @subject.tasks.find(params[:id])
@@ -73,6 +85,6 @@ class TasksController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def task_params
-    params.require(:task).permit(:name, :subject_id, :description, :due_date)
+    params.require(:task).permit(:name, :subject_id, :description, :due_date, :start_time)
   end
 end
