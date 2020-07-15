@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
   before_action :get_subject
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :set_time_zone, if: :user_signed_in?
 
   # GET /tasks
   # GET /tasks.json
@@ -73,6 +74,8 @@ class TasksController < ApplicationController
     else
       @subject = current_user.subjects.find(params[:subject_id])
     end
+  end
+  def set_time_zone
   end
 
   # Use callbacks to share common setup or constraints between actions.
