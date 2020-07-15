@@ -1,13 +1,15 @@
- 
+
 <div class="">
   <div class="task-attributes-container mx-auto w-75 p-3 bg-white shadow-lg">
     <h1 class="text-center"><%= @task.name %> </h1>
-      <strong>Description</strong>
-      <p class="h3 d-block"><%= @task.description %></p>
+      <% if @task.description? %>
+        <strong>Description</strong>
+        <p class="h3 d-block"><%= @task.description %></p>
+      <% end %>
+      <strong>Start Date</strong>
+      <p class="h3 d-block"><%= @task.start_time.strftime("%B") %> <%= @task.start_time.day %></p>
       <strong>Due Date</strong>
-      <p class="h3 d-block"><%= @task.due_date %></p>
-      <strong>Color</strong>
-      <p class="h3 d-block"><%= @task.color %></p>
+      <p class="h3 d-block"><%= @task.due_date.strftime("%B") %> <%= @task.due_date.day %></p>
     </div>
   </div>
 </div>

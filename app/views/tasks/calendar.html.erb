@@ -4,7 +4,17 @@
   <%= date.day %>
 <%tasks.each do |task|%>
     <div>
-      <%= task.name%>
+    <% if task.priority? %>
+    <% if task.priority == "low" %>
+      <h5 class="badge badge-secondary"><%= truncate(task.name, length: 20)%></h5>
+    <% elsif task.priority == "medium" %>
+          <h5 class="badge badge-info"><%= truncate(task.name, length: 20)%></h5>
+    <% elsif task.priority == "high" %>
+        <h5 class="badge badge-warning"><%= truncate(task.name, length: 20)%></h5>
+    <% else %>
+      <h5 class="badge badge-secondary"><%= truncate(task.name, length: 20)%></h5>
+    <% end %>
+    <% end %>
     </div>
   <% end %>
 <% end %>

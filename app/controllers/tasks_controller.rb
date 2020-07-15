@@ -58,7 +58,7 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
     respond_to do |format|
-      format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
+      format.html { redirect_to root_path, notice: 'Task was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -85,6 +85,6 @@ class TasksController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def task_params
-    params.require(:task).permit(:name, :subject_id, :description, :due_date, :start_time)
+    params.require(:task).permit(:name, :subject_id, :description, :due_date, :start_time, :priority)
   end
 end
